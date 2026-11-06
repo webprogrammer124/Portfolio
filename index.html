@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Seema Sikander | Portfolio</title>
+<meta name="description" content="Full-Stack Developer & AI Solutions Engineer building responsive web apps and AI-powered products.">
+<style>
+:root{--bg:#fff7e6;--ink:#111;--card:#fff;--a:#ffd23f;--b:#ff6b9d;--c:#5ce1e6;--d:#9b8cff;--sh:6px 6px 0 var(--ink);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15131a;--ink:#f5f0e6;--card:#201d29;--sh:6px 6px 0 #000}}
+:root[data-theme="dark"]{--bg:#15131a;--ink:#f5f0e6;--card:#201d29;--sh:6px 6px 0 #000}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Space Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.55;overflow-x:hidden}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--a);border-bottom:3px solid var(--ink);color:#111}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 20px;flex-wrap:wrap}
+nav b{font-size:1.1rem}
+nav div a{margin-left:14px;font-weight:700;text-decoration:none;font-size:.95rem}
+nav div a:hover{text-decoration:underline}
+.btn{display:inline-block;padding:12px 20px;border:3px solid var(--ink);background:var(--b);color:#111;font-weight:800;text-decoration:none;box-shadow:var(--sh);transition:transform .1s,box-shadow .1s;margin:6px 10px 6px 0}
+.btn:hover{transform:translate(3px,3px);box-shadow:3px 3px 0 var(--ink)}
+.btn.alt{background:var(--c)}
+.tag{display:inline-block;border:3px solid var(--ink);background:var(--c);color:#111;padding:4px 12px;font-weight:800;font-size:.85rem;margin:0 8px 8px 0;box-shadow:3px 3px 0 var(--ink)}
+.tag.p{background:var(--b)}.tag.y{background:var(--a)}.tag.v{background:var(--d)}
+.hero{padding:70px 0 50px}
+.hero h1{font-size:clamp(2.6rem,9vw,6rem);line-height:1;margin:18px 0 10px;letter-spacing:-2px}
+.hero h1 span{background:var(--a);color:#111;padding:0 10px;border:3px solid var(--ink);box-shadow:var(--sh);display:inline-block;transform:rotate(-1.5deg)}
+.type{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:clamp(1rem,3vw,1.5rem);font-weight:700;min-height:2em}
+.type i{display:inline-block;width:10px;height:1.1em;background:var(--ink);vertical-align:-3px;animation:bl 1s steps(2) infinite}
+@keyframes bl{50%{opacity:0}}
+.marq{border-block:3px solid var(--ink);background:var(--ink);color:var(--bg);overflow:hidden;white-space:nowrap;padding:10px 0;font-weight:800;letter-spacing:2px}
+.marq div{display:inline-block;animation:mq 28s linear infinite}
+@keyframes mq{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.marq div,.type i{animation:none}}
+section{padding:70px 0 10px}
+.lab{font-family:ui-monospace,Menlo,Consolas,monospace;font-weight:700;opacity:.8}
+h2{font-size:clamp(2rem,6vw,3.4rem);margin:4px 0 26px;letter-spacing:-1px}
+.card{background:var(--card);border:3px solid var(--ink);box-shadow:var(--sh);padding:22px}
+.grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card h3{margin:10px 0 8px;font-size:1.25rem}
+.card p{margin:0}
+.ico{font-size:2rem}
+.stats{display:flex;gap:16px;flex-wrap:wrap;margin-top:22px}
+.stat{flex:1;min-width:130px;border:3px solid var(--ink);padding:14px;background:var(--a);color:#111;box-shadow:4px 4px 0 var(--ink);text-align:center}
+.stat b{display:block;font-size:2rem}
+.exp{display:grid;gap:22px}
+.exp .top{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.exp ul{margin:12px 0 0;padding-left:20px}
+.exp li{margin:4px 0}
+.when{font-family:ui-monospace,Menlo,Consolas,monospace;font-weight:700;background:var(--d);color:#111;border:3px solid var(--ink);padding:2px 10px;height:fit-content}
+footer{margin-top:80px;border-top:3px solid var(--ink);background:var(--a);color:#111;padding:26px 0;text-align:center;font-weight:700}
+.skills{display:flex;flex-wrap:wrap}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>seema.dev ✦</b><div><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a><a href="mailto:seemadev500@gmail.com">📧 Email</a></div></div></nav>
+
+<header class="hero"><div class="wrap">
+<span class="tag y">Open to Work</span><span class="tag p">🚀 2026</span><span class="tag">🧠 AI Solutions</span>
+<div class="lab">Hello World 👋</div>
+<h1>Seema <span>Sikander</span></h1>
+<div class="type"><span id="t"></span><i></i></div>
+<p style="max-width:620px;font-size:1.1rem">Full-Stack Developer building responsive web apps and AI-powered products with React, Node.js and MongoDB.</p>
+<a class="btn" href="#projects">🚀 View Projects</a><a class="btn alt" href="#contact">📬 Let’s Talk</a>
+<div style="margin-top:22px"><a class="tag y" href="mailto:seemadev500@gmail.com">📧 seemadev500@gmail.com</a><a class="tag" href="https://github.com/webprogrammer124" target="_blank" rel="noopener">GitHub</a><a class="tag p" href="https://linkedin.com/in/seemasikander" target="_blank" rel="noopener">LinkedIn</a></div>
+</div></header>
+
+<div class="marq"><div id="m"></div></div>
+
+<section id="about"><div class="wrap">
+<div class="lab">[ 01 — ABOUT ]</div><h2>Who Am I?</h2>
+<div class="card" style="background:var(--c);color:#111">
+<p style="font-size:1.1rem">I’m a Full-Stack Developer and AI Solutions Engineer with a BSCS from Virtual University of Pakistan. I build clean, responsive interfaces and the APIs behind them, and I enjoy adding practical AI features, from chatbots to resume parsing, into real products.</p>
+<div class="stats">
+<div class="stat"><b>2+</b>Years Experience</div><div class="stat"><b>5</b>Projects Built</div><div class="stat"><b>3</b>Certifications</div>
+</div></div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+<div class="lab">[ 02 — SKILLS ]</div><h2>What I Do</h2>
+<div class="grid">
+<div class="card"><div class="ico">🎨</div><h3>Frontend Development</h3><p>Responsive, polished UIs with React.js, Tailwind CSS, Material UI, Bootstrap and modern JavaScript.</p></div>
+<div class="card"><div class="ico">⚙️</div><h3>Backend & APIs</h3><p>REST APIs and MongoDB data workflows using Node.js and Express.js.</p></div>
+<div class="card"><div class="ico">🤖</div><h3>AI Integration</h3><p>AI API integration, generative AI workflows and AI-assisted development for practical products.</p></div>
+</div>
+<div class="skills" style="margin-top:26px">
+<span class="tag">React.js</span><span class="tag p">Node.js</span><span class="tag y">Express.js</span><span class="tag v">MongoDB</span><span class="tag">Tailwind CSS</span><span class="tag p">JavaScript</span><span class="tag y">HTML5 / CSS3</span><span class="tag v">REST APIs</span><span class="tag">Git & GitHub</span><span class="tag p">Netlify</span>
+</div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+<div class="lab">[ 03 — PROJECTS ]</div><h2>What I Built</h2>
+<a class="btn alt" style="margin:0 0 22px" href="https://github.com/webprogrammer124?tab=repositories" target="_blank" rel="noopener">🐙 See all repos on GitHub</a>
+<div class="grid">
+<div class="card"><span class="tag p">AI</span><h3>AI Customer Support Platform</h3><p>AI chatbot, knowledge base, ticket generation, conversation memory and analytics dashboard.</p><a class="btn" style="margin:14px 0 0;padding:8px 14px;font-size:.9rem" href="https://github.com/webprogrammer124/AI_Customer-Support-Platform" target="_blank" rel="noopener">View on GitHub ↗</a></div>
+<div class="card"><span class="tag v">AI</span><h3>AI Recruitment & Hiring System</h3><p>Resume parsing, skill extraction, candidate ranking, job matching and hiring recommendations.</p><a class="btn" style="margin:14px 0 0;padding:8px 14px;font-size:.9rem" href="https://github.com/webprogrammer124/ai-recruitment-system" target="_blank" rel="noopener">View on GitHub ↗</a></div>
+<div class="card"><span class="tag">React</span><h3>Real Estate Website</h3><p>Responsive React.js website with API integration.</p><a class="btn" style="margin:14px 0 0;padding:8px 14px;font-size:.9rem" href="https://github.com/webprogrammer124?tab=repositories" target="_blank" rel="noopener">View on GitHub ↗</a></div>
+<div class="card"><span class="tag y">React</span><h3>E-commerce Website</h3><p>React.js-based responsive shopping interface.</p><a class="btn" style="margin:14px 0 0;padding:8px 14px;font-size:.9rem" href="https://github.com/webprogrammer124?tab=repositories" target="_blank" rel="noopener">View on GitHub ↗</a></div>
+<div class="card"><span class="tag p">Web</span><h3>Portfolio Website</h3><p>Personal responsive developer portfolio.</p><a class="btn" style="margin:14px 0 0;padding:8px 14px;font-size:.9rem" href="https://github.com/webprogrammer124?tab=repositories" target="_blank" rel="noopener">View on GitHub ↗</a></div>
+</div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+<div class="lab">[ 04 — EXPERIENCE ]</div><h2>My Journey</h2>
+<div class="exp">
+<div class="card"><div class="top"><div><h3 style="margin-top:0">AI Intern</h3><b>ByteHex Tech</b> · Remote</div><span class="when">Jun 2026 – Present</span></div>
+<ul><li>Developing an AI-powered customer support platform with React.js, Node.js, Express.js, MongoDB and Tailwind CSS.</li><li>Built and integrated REST APIs and MongoDB data workflows.</li><li>Working on chatbot, knowledge base, conversation memory, tickets and analytics features.</li></ul></div>
+<div class="card"><div class="top"><div><h3 style="margin-top:0">Frontend Developer</h3><b>Codinia</b> · Remote</div><span class="when">2023 – 2025</span></div>
+<ul><li>Developed and maintained client websites and web applications.</li><li>Built responsive interfaces with React.js, HTML5, CSS3 and Bootstrap.</li><li>Integrated REST APIs and improved UI/UX.</li></ul></div>
+</div>
+<div style="margin-top:26px"><span class="tag y">🏅 Microsoft AI Skills Fest 2026 Badge</span><span class="tag">Cisco: Introduction to Modern AI (2025)</span><span class="tag p">Saylani Mass IT Training Diploma</span></div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+<div class="lab">[ 05 — CONTACT ]</div><h2>Let’s Talk</h2>
+<div class="card" style="background:var(--b);color:#111"><p style="font-size:1.1rem;margin-bottom:12px">Have a project or role in mind? I’d love to hear about it. 👋</p>
+<p style="font-size:1.3rem;font-weight:800;margin-bottom:12px;word-break:break-all">📧 <a href="mailto:seemadev500@gmail.com">seemadev500@gmail.com</a></p>
+<a class="btn" style="background:#fff" href="mailto:seemadev500@gmail.com">📧 Email Me</a><a class="btn" style="background:#fff" href="https://github.com/webprogrammer124" target="_blank" rel="noopener">GitHub</a><a class="btn" style="background:#fff" href="https://linkedin.com/in/seemasikander" target="_blank" rel="noopener">LinkedIn</a></div>
+</div></section>
+
+<footer>Seema Sikander © 2026 · <a href="mailto:seemadev500@gmail.com">seemadev500@gmail.com</a></footer>
+
+<script>
+var items=["About Me","Full-Stack","AI Solutions","React","Node.js","MongoDB"];
+document.getElementById("m").textContent=Array(14).join("★ "+items.join(" ★ ")+" ").toUpperCase();
+var words=["Full-Stack Developer","AI Solutions Engineer","React & Node.js Builder"],w=0,c=0,del=false,el=document.getElementById("t");
+function tick(){var s=words[w];el.textContent=s.slice(0,c);
+if(!del&&c<s.length){c++;setTimeout(tick,70)}else if(!del){del=true;setTimeout(tick,1400)}
+else if(c>0){c--;setTimeout(tick,35)}else{del=false;w=(w+1)%words.length;setTimeout(tick,300)}}
+tick();
+</script>
+</body>
+</html>
